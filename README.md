@@ -33,7 +33,7 @@ This code sends commands over udp to a computer that presents visual stimuli (se
 
 Install:
 
-1) Download all files to the same root folder.
+1) Download all files in this repo to the same root folder.
 2) Set your Matlab path to this root folder. Do not set paths to deeper folders.
 3) In Stimulator.m, change 'root_controller' to be the same as this root folder.
 4) If you are using widefield analysis code, change root_WFanalysis to the location of that code. 
@@ -46,7 +46,21 @@ Here, you will set folder locations, ip addresses, some flags, and a few other h
 
 # [visual-stimulus-generator](https://github.com/inauhaus/visual-stimulus-generator)
 
-This code generates the visual stimuli using Psychtoolbox. It goes on a machine that receives udp commands from [visual-stimulus-controller](https://github.com/inauhaus/visual-stimulus-controller)
+This code is called from 'computer B' and generates the visual stimuli using Psychtoolbox. It receives commands from [visual-stimulus-controller](https://github.com/inauhaus/visual-stimulus-controller).
+
+Install:
+1) Install Psychtoolbox
+2) Download all files in this rep to the same root folder.
+3) Set your Matlab path to this root folder and all of the folders inside it.
+
+configCom.m:
+Change the ip address of 'computer A' and save
+
+configureMstate.m
+change Mstate.monitor to 'LIN'. Again this just means that its a linear look-up table for the gamma function so it doesn't have to access any gamma files, which happens in updateMonitor.
+
+updateMonitor.m:
+Under each monitor 'case', you will provide the file location of your gamma calibration.  You will also define the size of each the display (cm).  The 'LIN' case is used when you don't have a calibration yet, or you don't want to use one. 
 
 # [widefield-imaging](https://github.com/inauhaus/widefield-imaging)
 
