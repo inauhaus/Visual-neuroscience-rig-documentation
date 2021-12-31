@@ -45,4 +45,10 @@ To perform widefield imaging alone, only computer 'A' and 'B' are used.  For two
 
 ![Slide1](https://user-images.githubusercontent.com/13107530/145627782-aee2ca0b-4889-453e-992b-73eba64d8565.jpeg)
 
+# [visual-stimulus-generator](https://github.com/inauhaus/visual-stimulus-generator)
+
+# [widefield-imaging](https://github.com/inauhaus/widefield-imaging)
+
+# [2-photon-analysis](https://github.com/inauhaus/2-photon-analysis)
+
 
