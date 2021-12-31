@@ -10,13 +10,13 @@ c)	Optical filters for reflectance (e.g. intrinsic hemodynamic) or fluorescence 
 
 d)	TTL output synchronized to visual stimuli, which triggers frame grabs at the camera. We use the 1208FS from Measurement Computing.  It is has a USB connection to 'computer B' and is controlled by Psychtoolbox.
 
-e)	'Computer A' for GUI control and image acquisition.  We use a Windows PC.  This machine should have at least 32 GB of RAM and have Matlab 2021.  See other specs from Pco. [visual-stimulus-controller](https://github.com/inauhaus/visual-stimulus-controller) [widefield-imaging](https://github.com/inauhaus/widefield-imaging) should be uploaded here. 
+e)	'Computer A' for GUI control and image acquisition.  We use a Windows PC.  This machine should have at least 32 GB of RAM and have Matlab 2021.  See other specs from Pco. This machine should point to the files in [visual-stimulus-controller](https://github.com/inauhaus/visual-stimulus-controller) and [widefield-imaging](https://github.com/inauhaus/widefield-imaging). 
 
-f)  'Computer B' receives remote commands to generate visual stimuli. We are using Mac OS Catalina.  See Psychtoolbox for MATLAB and OS compatibility. [visual-stimulus-generator](https://github.com/inauhaus/visual-stimulus-generator) should be uploaded here.  
+f)  'Computer B' receives remote commands to generate visual stimuli. We are using Mac OS Catalina.  See Psychtoolbox for MATLAB and OS compatibility. This machine should point to the files in [visual-stimulus-generator](https://github.com/inauhaus/visual-stimulus-generator).  
 
 g)  Two-photon microscope (optional).  We use a Neurolabware scope and acquisition software by Scanbox.  The data analysis GUI assumes their data struture.
 
-h)  'Computer C' is required if two-photon imaging is used. [2-photon-analysis](https://github.com/inauhaus/2-photon-analysis) should be uploaded here. 
+h)  'Computer C' is required if two-photon imaging is used. This machine should point to the files in [2-photon-analysis](https://github.com/inauhaus/2-photon-analysis). 
 
 *This document does not discuss the optics or illumination setup. It focuses on setting up the software for visual stimuli, image acquisition, and analysis.
 
