@@ -21,7 +21,8 @@ h)  'Computer C' is required if two-photon imaging is used. This machine should 
 *This document does not discuss the optics or illumination setup. It focuses on setting up the software for visual stimuli, image acquisition, and analysis.
 
 
-Schematic of connectivity:
+
+SCHEMATIC OF CONNECTIVITY:
 
 To perform widefield imaging alone, only computer 'A' and 'B' are used.  For two-photon acquisition, a third machine ('C') is necessary.
 
