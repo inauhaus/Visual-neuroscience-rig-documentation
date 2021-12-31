@@ -23,7 +23,7 @@ i). A third computer is required if two-photon imaging is used.
 *This document does not discuss the optics or illumination setup.   It focuses on setting up the software for visual stimuli, image acquisition, and analysis.
 
 
-# visual-stimulus-controller
+# [visual-stimulus-controller](https://github.com/inauhaus/visual-stimulus-controller)
 This code sends commands over udp to a computer that presents visual stimuli (see visual-stimulus-generator repo). It also aligns experimental information (e.g. file names) with local widefield, local ephys, or remote 2photon acquisition. Visual stimulus parameters are configured using MATLAB GUI in this folder.  It is used on a Windows 10 machine with MATLAB 2021.
 
 Install:
@@ -44,3 +44,5 @@ Schematic of connectivity:
 To perform widefield imaging alone, only computer 'A' and 'B' are used.  For two-photon acquisition, a third machine ('C') is necessary.
 
 ![Slide1](https://user-images.githubusercontent.com/13107530/145627782-aee2ca0b-4889-453e-992b-73eba64d8565.jpeg)
+
+
