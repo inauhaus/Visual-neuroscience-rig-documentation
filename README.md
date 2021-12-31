@@ -42,7 +42,8 @@ Install:
 configureMstate.m: 
 
 Here, you will set folder locations, ip addresses, some flags, and a few other high level defaults. For example, 'Mstate.analyzerRoot' is the folder you created for the .analyzer files above.  ip addresses are for the visual stimulus computer (see visual-stimulus-generator repo), along with the 2p computer if you happen to be doing that (Ringach's Scanbox in our case).
-  You also want to set display defaults in configureMstate.m. These are monitor type and distance. For monitor type, include a string identifier for one of the monitors in your lab; e.g. "LCD1". See updateMonitor.m at visual-stimulus-generator (described below), where these string identifiers (and corresponding settings) are saved. For a quick start, set the monitor type to "LIN", which stands for linear and does not use a calibration file. It will assume certain screen dimensions and gamma correction for each type.  Monitor type and distance can adjusted in the GUI as well.
+
+You also want to set display defaults in configureMstate.m. These are monitor type and distance. For monitor type, include a string identifier for one of the monitors in your lab; e.g. "LCD1". See updateMonitor.m at visual-stimulus-generator (described below), where these string identifiers (and corresponding settings) are saved. For a quick start, set the monitor type to "LIN", which stands for linear and does not use a calibration file. It will assume certain screen dimensions and gamma correction for each type.  Monitor type and distance can adjusted in the GUI as well.
 
 
 # [visual-stimulus-generator](https://github.com/inauhaus/visual-stimulus-generator)
@@ -53,7 +54,7 @@ Install:
 1) Install Psychtoolbox
 2) Download all files in this repo to the same root folder.
 3) Set your Matlab path to this root folder and all of the folders inside it.
-4) Hard code changes in the following files
+4) Hard code changes in the following files:
 
   configCom.m:
 Change the ip address to that of 'computer A'.
