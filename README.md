@@ -47,8 +47,13 @@ To perform widefield imaging alone, only computer 'A' and 'B' are used.  For two
 
 # [visual-stimulus-generator](https://github.com/inauhaus/visual-stimulus-generator)
 
+This code generates the visual stimuli using Psychtoolbox. It goes on a machine that receives udp commands from [visual-stimulus-controller](https://github.com/inauhaus/visual-stimulus-controller)
+
 # [widefield-imaging](https://github.com/inauhaus/widefield-imaging)
 
+There are two GUIs. One to collect widefield imaging data, and one to analyze it. It runs on the same computer as [visual-stimulus-controller](https://github.com/inauhaus/visual-stimulus-controller)
+
 # [2-photon-analysis](https://github.com/inauhaus/2-photon-analysis)
+This code runs a Matlab GUI for analyzing visual responses recorded from a two-photon microscope. The microscope and acquisition software is from [Neurolabware](http://neurolabware.com/) and [Scanbox](https://scanbox.org/tag/ringach/). 
 
 
