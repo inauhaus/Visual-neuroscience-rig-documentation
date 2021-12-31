@@ -4,21 +4,21 @@
 # Hardware overview
 a)	Pco Panda.  This camera comes with a USB 3.1 card.
 
-b)	Light source with serial port communication to interface with 'imager' Matlab GUI.  We use the Excite 110LED, and its Matlab SDK.
+b)	Light source. We use the Excite 110LED, which communicates with MATLAB SDK code in [widefield-imaging](https://github.com/inauhaus/visual-stimulus-controller), via a MATLAB SDK. But any light sournce can be manually operated without any modifications to the code.  
 
 c)	Optical filters for reflectance (e.g. intrinsic hemodynamic) or fluorescence (e.g. GCaMP) imaging.*
 
-d)	TTL output synchronized to visual stimuli, which triggers frame grabs at the camera. We use the 1208FS from Measurement Computing.  It is connected with USB    connection controlled with Psychtoolbox.
+d)	TTL output synchronized to visual stimuli, which triggers frame grabs at the camera. We use the 1208FS from Measurement Computing.  It is has a USB connection to 'computer B' and is controlled by Psychtoolbox.
 
-e)	'Computer A' for GUI control and image acquisition.  We use a Windows PC.
+e)	'Computer A' for GUI control and image acquisition.  We use a Windows PC.  This machine should have at least 32 GB of RAM and have Matlab 2021.  See other specs from Pco.
 
-f)  'Computer B' receives remote commands to generate visual stimuli. We use Mac OS.
+f)  'Computer B' receives remote commands to generate visual stimuli. We are using Mac OS Catalina.  See Psychtoolbox for MATLAB and OS compatibility. 
 
 g)  Two-photon microscope (optional).  We use a Neurolabware scope and acquisition software by Scanbox.  The data analysis GUI assumes their data struture.
 
-h)  A third computer is required if two-photon imaging is used.
+h)  'Computer C' is required if two-photon imaging is used.
 
-*This document does not discuss the optics or illumination setup.   It focuses on setting up the software for visual stimuli, image acquisition, and analysis.
+*This document does not discuss the optics or illumination setup. It focuses on setting up the software for visual stimuli, image acquisition, and analysis.
 
 
 Schematic of connectivity:
