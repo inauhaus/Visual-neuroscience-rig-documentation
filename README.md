@@ -8,15 +8,15 @@ b)	Light source with serial port communication to interface with 'imager' Matlab
 
 c)	Optical filters for reflectance (e.g. intrinsic hemodynamic) or fluorescence (e.g. GCaMP) imaging.*
 
-d)	TTL output synchronized to visual stimuli, which triggers frame grabs at the camera. We use the 1208FS from Measurement Computing.  It is connected with USB connection controlled with Psychtoolbox.
+d)	TTL output synchronized to visual stimuli, which triggers frame grabs at the camera. We use the 1208FS from Measurement Computing.  It is connected with USB    connection controlled with Psychtoolbox.
 
-f)	A computer for GUI control and image acquisition.  We use a Windows PC.
+e)	'Computer A' for GUI control and image acquisition.  We use a Windows PC.
 
-g)	A second computer that receives remote commands to generate visual stimuli. We use Mac OS.
+f)  'Computer B' receives remote commands to generate visual stimuli. We use Mac OS.
 
-h)  Two-photon microscope.  We use a Neurolabware scope and acquisition software by Scanbox.  The data analysis GUI assumes their data struture.
+g)  Two-photon microscope (optional).  We use a Neurolabware scope and acquisition software by Scanbox.  The data analysis GUI assumes their data struture.
 
-i). A third computer is required if two-photon imaging is used.
+h)  A third computer is required if two-photon imaging is used.
 
 *This document does not discuss the optics or illumination setup.   It focuses on setting up the software for visual stimuli, image acquisition, and analysis.
 
