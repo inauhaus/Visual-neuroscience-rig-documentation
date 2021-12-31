@@ -50,17 +50,18 @@ This code is called from 'computer B' and generates the visual stimuli using Psy
 
 Install:
 1) Install Psychtoolbox
-2) Download all files in this rep to the same root folder.
+2) Download all files in this repo to the same root folder.
 3) Set your Matlab path to this root folder and all of the folders inside it.
+4) Hard code changes in the following files
 
-configCom.m:
-Change the ip address of 'computer A' and save
+  configCom.m:
+Change the ip address to that of the visua-stimulus-controller ('computer A').
 
-configureMstate.m
-change Mstate.monitor to 'LIN'. Again this just means that its a linear look-up table for the gamma function so it doesn't have to access any gamma files, which happens in updateMonitor.
+  configureMstate.m
+Change Mstate.monitor to 'LIN'. This means that its a "linear" look-up table for the gamma function so it doesn't have to access any   gamma files while you are first setting up.  The other monitor display strings are shown in updateMonitor.m.
 
-updateMonitor.m:
-Under each monitor 'case', you will provide the file location of your gamma calibration.  You will also define the size of each the display (cm).  The 'LIN' case is used when you don't have a calibration yet, or you don't want to use one. 
+  updateMonitor.m:
+Under each monitor 'case', you will provide the file location of your gamma calibration.  You will also define the size of each the     display (cm).  The 'LIN' case is used when you don't have a calibration yet, or you don't want to use one. The monitor being used is set remotely in the visual-stimulus-controller GUI.
 
 # [widefield-imaging](https://github.com/inauhaus/widefield-imaging)
 
