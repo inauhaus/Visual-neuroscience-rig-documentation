@@ -55,13 +55,13 @@ Install:
 4) Hard code changes in the following files
 
   configCom.m:
-Change the ip address to that of the visua-stimulus-controller ('computer A').
+Change the ip address to that of 'computer A'.
 
   configureMstate.m
-Change Mstate.monitor to 'LIN'. This means that its a "linear" look-up table for the gamma function so it doesn't have to access any   gamma files while you are first setting up.  The other monitor display strings are shown in updateMonitor.m.
+For a quick start, set Mstate.monitor to 'LIN', which stands for linear. It will not access a calibration file.  The other monitor display strings are shown in updateMonitor.m.
 
   updateMonitor.m:
-Under each monitor 'case', you will provide the file location of your gamma calibration.  You will also define the size of each the     display (cm).  The 'LIN' case is used when you don't have a calibration yet, or you don't want to use one. The monitor being used is set remotely in the visual-stimulus-controller GUI.
+Under each monitor 'case', you will provide the file location of your gamma calibration.  You will also define the size of each     display case (cm).  The 'LIN' case is used when you don't have a calibration yet, or don't want to use one (e.g. while calibrating). The desired monitor in your lab (e.g. "LCD", etc.) is set remotely in the visual-stimulus-controller GUI. Some examples of different monitors from our lab are shown as the different cases.
 
 # [widefield-imaging](https://github.com/inauhaus/widefield-imaging)
 
