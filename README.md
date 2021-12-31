@@ -1,5 +1,24 @@
 # Visual-neuroscience-rig-documentation
 
+
+a)	Pco Panda.  This camera comes with a USB 3.1 card.
+
+b)	Light source with serial port communication to interface with 'imager' Matlab GUI.  We use the Excite 110LED, and its Matlab SDK.
+
+c)	Optical filters for reflectance (e.g. intrinsic hemodynamic) or fluorescence (e.g. GCaMP) imaging.*
+
+d)	TTL output synchronized to visual stimuli, which triggers frame grabs at the camera. We use the 1208FS from Measurement Computing.  It is connected with USB connection controlled with Psychtoolbox.
+
+e)	The signals produced by ‘e’ and ‘f’ get fed into an analog-to-digital device that is connected to the acquisition PC. We use a small USB box from National Instruments (USB-9162). The analysis code compares these two signals to determine response onset.
+
+f)	A computer for GUI control and image acquisition.  We use a Windows PC.
+
+g)	A second computer that receives remote commands to generate visual stimuli. We use Mac OS.
+
+*This document does not discuss the optics or illumination setup.   It focuses on setting up the software for visual stimuli, image acquisition, and analysis.
+![image](https://user-images.githubusercontent.com/13107530/147824927-2d98ddae-dd4c-474b-8662-65bd5597aa0e.png)
+
+
 # visual-stimulus-controller
 This code sends commands over udp to a computer that presents visual stimuli (see visual-stimulus-generator repo). It also aligns experimental information (e.g. file names) with local widefield, local ephys, or remote 2photon acquisition. Visual stimulus parameters are configured using MATLAB GUI in this folder.  It is used on a Windows 10 machine with MATLAB 2021.
 
