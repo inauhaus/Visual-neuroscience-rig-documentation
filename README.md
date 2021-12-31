@@ -43,7 +43,7 @@ configureMstate.m:
 
 Here, you will set folder locations, ip addresses, some flags, and a few other high level defaults. For example, 'Mstate.analyzerRoot' is the folder you created for the .analyzer files above.  ip addresses are for the visual stimulus computer (see visual-stimulus-generator repo), along with the 2p computer if you happen to be doing that (Ringach's Scanbox in our case).
 
-You can also include display defaults, such as monitor distance and type. Each monitor used at this rig should have a string identifier, such as "LCD1".  By setting the monitor, it will assume certain screen dimensions and gamma calibration. These settings can be adjusted in the GUI as well.
+You can also include display defaults, monitor type and distance. For monitor type, each monitor will have a string identifier; e.g. "LCD1". It will assume certain screen dimensions and gamma correction for each type.  For quick start, you can set this to "LIN", which stands for linear and does not use a calibration file. Monitor type and distance can adjusted in the GUI as well.
 
 
 # [visual-stimulus-generator](https://github.com/inauhaus/visual-stimulus-generator)
