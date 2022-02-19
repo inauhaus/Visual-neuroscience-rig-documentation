@@ -4,7 +4,7 @@
 # Hardware overview
 a)	Pco Panda.  This camera comes with a USB 3.1 card.
 
-b)	Light source. We use the Excite 110LED, which communicates with MATLAB SDK code in [widefield-imaging](https://github.com/inauhaus/widefield-imaging). But any light sournce can be manually operated without any modifications to the code.  
+b)	Light source. We use the Excite 110LED, which communicates with MATLAB SDK code in [widefield-imaging](https://github.com/inauhaus/widefield-imaging). But any light source can be manually operated without any modifications to the code.  
 
 c)	Optical filters for reflectance (e.g. intrinsic hemodynamic) or fluorescence (e.g. GCaMP) imaging.*
 
